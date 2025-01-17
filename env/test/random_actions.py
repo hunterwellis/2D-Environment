@@ -1,6 +1,8 @@
-from  env import TankEnv
+import sys
+sys.path.append("..")
+from env import SortEnv
 
-env = TankEnv()
+env = SortEnv()
 
 obs = env.reset()
 done = False
@@ -11,4 +13,3 @@ while not done:
     env.render()
 
 env.close()
-
